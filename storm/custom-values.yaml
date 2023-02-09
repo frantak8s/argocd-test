@@ -21,7 +21,7 @@ zookeeper:
   enabled: true
   readinessProbe:
     enabled: false
-  replicaCount: 1
+  replicaCount: 3
   securityContext:
     enabled: true
     fsGroup: 1000
