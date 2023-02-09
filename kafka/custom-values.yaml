@@ -1,75 +1,74 @@
-kafka:
-    containerSecurityContext:
-      enabled: true
-      runAsUser: 1000
-    deleteTopicEnable: true
-    global:
-      storageClass: tanzu
-    livenessProbe:
-      enabled: true
-      failureThreshold: 10
-      initialDelaySeconds: 15
-      periodSeconds: 10
-      successThreshold: 1
-      timeoutSeconds: 5
-    podSecurityContext:
-      enabled: true
-      fsGroup: 1000
-    readinessProbe:
-      enabled: false
-    replicaCount: 3
-    zookeeper:
-      containerSecurityContext:
-        enabled: true
-        runAsUser: 1000
-      enabled: true
-      livenessProbe:
-        enabled: true
-        failureThreshold: 10
-        initialDelaySeconds: 15
-        periodSeconds: 10
-        successThreshold: 1
-        timeoutSeconds: 5
-      podSecurityContext:
-        enabled: true
-        fsGroup: 1000
-      readinessProbe:
-        enabled: false
-      replicaCount: 3kafka:
-    containerSecurityContext:
-      enabled: true
-      runAsUser: 1000
-    deleteTopicEnable: true
-    global:
-      storageClass: tanzu
-    livenessProbe:
-      enabled: true
-      failureThreshold: 10
-      initialDelaySeconds: 15
-      periodSeconds: 10
-      successThreshold: 1
-      timeoutSeconds: 5
-    podSecurityContext:
-      enabled: true
-      fsGroup: 1000
-    readinessProbe:
-      enabled: false
-    replicaCount: 3
-    zookeeper:
-      containerSecurityContext:
-        enabled: true
-        runAsUser: 1000
-      enabled: true
-      livenessProbe:
-        enabled: true
-        failureThreshold: 10
-        initialDelaySeconds: 15
-        periodSeconds: 10
-        successThreshold: 1
-        timeoutSeconds: 5
-      podSecurityContext:
-        enabled: true
-        fsGroup: 1000
-      readinessProbe:
-        enabled: false
-      replicaCount: 3
+containerSecurityContext:
+  enabled: true
+  runAsUser: 1000
+deleteTopicEnable: true
+global:
+  storageClass: tanzu
+livenessProbe:
+  enabled: true
+  failureThreshold: 10
+  initialDelaySeconds: 15
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 5
+podSecurityContext:
+  enabled: true
+  fsGroup: 1000
+readinessProbe:
+  enabled: false
+replicaCount: 3
+zookeeper:
+  containerSecurityContext:
+    enabled: true
+    runAsUser: 1000
+  enabled: true
+  livenessProbe:
+    enabled: true
+    failureThreshold: 10
+    initialDelaySeconds: 15
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 5
+  podSecurityContext:
+    enabled: true
+    fsGroup: 1000
+  readinessProbe:
+    enabled: false
+  replicaCount: 3kafka:
+containerSecurityContext:
+  enabled: true
+  runAsUser: 1000
+deleteTopicEnable: true
+global:
+  storageClass: tanzu
+livenessProbe:
+  enabled: true
+  failureThreshold: 10
+  initialDelaySeconds: 15
+  periodSeconds: 10
+  successThreshold: 1
+  timeoutSeconds: 5
+podSecurityContext:
+  enabled: true
+  fsGroup: 1000
+readinessProbe:
+  enabled: false
+replicaCount: 3
+zookeeper:
+  containerSecurityContext:
+    enabled: true
+    runAsUser: 1000
+  enabled: true
+  livenessProbe:
+    enabled: true
+    failureThreshold: 10
+    initialDelaySeconds: 15
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 5
+  podSecurityContext:
+    enabled: true
+    fsGroup: 1000
+  readinessProbe:
+    enabled: false
+  replicaCount: 3
